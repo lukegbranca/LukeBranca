@@ -513,7 +513,8 @@
       transform-origin: top left;
       pointer-events: none;
     }
-    .port-preview.interactive { touch-action: none; }
+    .port-preview { touch-action: pan-y; }
+    .port-preview.interactive { touch-action: auto; }
     .port-preview.interactive iframe { pointer-events: auto; }
     .port-interact-overlay {
       position: absolute;
@@ -2072,7 +2073,7 @@
       const isOn = wrap.classList.toggle('interactive');
       btn.classList.toggle('on', isOn);
       btn.textContent = isOn ? 'Click to lock' : 'Click to interact';
-      if (isOn) { unlockContainer(containerId); } else { lockContainer(containerId); }
+      if (isOn) { lockContainer(containerId); } else { unlockContainer(containerId); }
     }
 
     // Load iframe on first interact click, then toggle normally
@@ -2089,13 +2090,12 @@
         iframe.sandbox = 'allow-scripts allow-same-origin allow-forms';
         wrap.appendChild(iframe);
         scaleIframes();
-        lockContainer(containerId);
       }
       // Then toggle interactive
       const isOn = wrap.classList.toggle('interactive');
       btn.classList.toggle('on', isOn);
       btn.textContent = isOn ? 'Click to lock' : 'Click to interact';
-      if (isOn) { unlockContainer(containerId); } else { lockContainer(containerId); }
+      if (isOn) { lockContainer(containerId); } else { unlockContainer(containerId); }
     }
 
     // Reset Sonya
@@ -2106,7 +2106,7 @@
       wrap.classList.remove('interactive');
       btn.classList.remove('on');
       btn.textContent = 'Click to interact';
-      lockContainer('port-2');
+      unlockContainer('port-2');
       iframe.src = 'https://pbrancainvite.netlify.app/';
       iframe.addEventListener('load', blockSonyaForms, { once: true });
     }
