@@ -513,14 +513,15 @@
       transform-origin: top left;
       pointer-events: none;
     }
+    .port-preview.interactive { touch-action: none; }
     .port-preview.interactive iframe { pointer-events: auto; }
     .port-interact-overlay {
       position: absolute;
       inset: 0;
       background: transparent;
       z-index: 5;
-      cursor: default;
-      pointer-events: none;
+      cursor: pointer;
+      pointer-events: auto;
     }
     .port-interact-hint { display: none; }
     .port-preview.interactive .port-interact-overlay { display: none; }
