@@ -1,0 +1,16 @@
+Place the following image files in this folder:
+
+  logo.png              — Paws of Bayside logo (navy background, dog illustration)
+  hero-beach.jpg        — Wide Bayside coastal landscape (the scenic cliffside beach shot)
+  dog-aussie.jpg        — Tri-colour Aussie/Border Collie looking up at camera
+  dog-beach-rocks.jpg   — Dark wet dog sitting on beach rocks by the bay
+  dog-spaniel-grass.jpg — Brown & white spaniel sitting on grass
+  dog-spaniel-water.jpg — Brown & white spaniel splashing in the water
+  dog-cavoodle-sand.jpg — Golden cavoodle with tennis ball on sand
+  dog-spaniel-happy.jpg — Happy spaniel with mouth wide open
+  dog-spaniel-sunset.jpg — Spaniel sitting on beach with sailboats at sunset
+  dog-border-collie.jpg — Black & white Border Collie fetching a tennis ball
+  dog-cavoodle-tile.jpg — Golden cavoodle on tile floor
+
+All images should be JPG or PNG format.
+Once uploaded, delete this file.
