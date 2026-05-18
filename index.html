@@ -1861,42 +1861,42 @@
   </section>
 
   <!-- PRICING / CTA -->
-  <section id="pricing" style="padding: 50px 80px; background: var(--navy); height: 100vh; display: flex; align-items: center; box-sizing: border-box; position: relative; overflow: hidden;">
+  <section id="pricing" style="padding: 60px 80px; background: var(--white); height: 100vh; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; box-sizing: border-box; border-top: 1px solid var(--rule);">
 
-    <!-- Ghosted monogram -->
-    <div style="position: absolute; right: -60px; top: 50%; transform: translateY(-50%); font-family: 'Cormorant Garamond', serif; font-size: 32vw; font-weight: 700; color: rgba(255,255,255,0.04); line-height: 1; pointer-events: none; user-select: none; white-space: nowrap;">LB</div>
-
-    <div style="display: flex; align-items: center; gap: 80px; width: 100%; position: relative; z-index: 1;">
-
-      <!-- Left: copy -->
-      <div style="flex: 1; min-width: 0;">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-          <div style="width: 28px; height: 1.5px; background: rgba(255,255,255,0.35);"></div>
-          <span style="font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.45); font-family: 'DM Sans', sans-serif;">Pricing</span>
-        </div>
-        <div style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: #fff; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 28px;">Simple,<br>honest pricing.</div>
-        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.72); max-width: 460px; margin: 0 0 16px; line-height: 1.55; font-weight: 300;">Every project is different. Get in touch and I'll give you a straight number within 24 hours.</p>
-        <p style="font-size: 1rem; color: rgba(255,255,255,0.42); max-width: 440px; margin: 0 0 48px; line-height: 1.65; font-weight: 300;">Significantly below agency rates. No account managers, no markup. Just the work.</p>
-        <a href="mailto:lukegbranca@gmail.com" style="display: inline-flex; align-items: center; gap: 10px; background: #fff; color: var(--navy); padding: 14px 32px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, color 0.2s; font-family: 'DM Sans', sans-serif;">Get in touch</a>
+    <!-- Left: copy -->
+    <div>
+      <div class="section-label">
+        <div class="section-label-line"></div>
+        <span>Pricing</span>
       </div>
-
-      <!-- Right: stat panel -->
-      <div style="flex: 0 0 340px; border-left: 1px solid rgba(255,255,255,0.12);">
-        <div style="padding: 36px 0 36px 52px; border-bottom: 1px solid rgba(255,255,255,0.12);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 700; color: #fff; line-height: 1;">24 hrs</div>
-          <div style="font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-top: 10px; line-height: 1.5; font-family: 'DM Sans', sans-serif;">Quote turnaround. No chasing, no forms.</div>
-        </div>
-        <div style="padding: 36px 0 36px 52px; border-bottom: 1px solid rgba(255,255,255,0.12);">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 700; color: #fff; line-height: 1;">Days</div>
-          <div style="font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-top: 10px; line-height: 1.5; font-family: 'DM Sans', sans-serif;">Delivered fast. Not the weeks an agency takes.</div>
-        </div>
-        <div style="padding: 36px 0 36px 52px;">
-          <div style="font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 700; color: #fff; line-height: 1;">Unlimited</div>
-          <div style="font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-top: 10px; line-height: 1.5; font-family: 'DM Sans', sans-serif;">Revisions until you're genuinely happy.</div>
-        </div>
-      </div>
-
+      <div class="section-title" style="margin-bottom: 16px;">Simple,<br>honest pricing.</div>
+      <p class="section-sub" style="margin-bottom: 12px;">Every project is different. Get in touch and I'll give you a straight number within 24 hours.</p>
+      <p style="font-size: 0.92rem; color: var(--muted); line-height: 1.65; font-weight: 300; max-width: 420px; margin: 0;">Significantly below agency rates. No account managers, no markup. Just the work.</p>
+      <a href="mailto:lukegbranca@gmail.com" class="btn-primary">
+        Get in touch
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
+
+    <!-- Right: card -->
+    <div class="cta-right">
+      <div class="cta-right-header">What's included</div>
+      <ul class="cta-list">
+        <li><span class="cta-check">✓</span> Quote back within 24 hours, no chasing</li>
+        <li><span class="cta-check">✓</span> Delivered in days, not the weeks an agency takes</li>
+        <li><span class="cta-check">✓</span> Significantly below agency rates, always</li>
+        <li><span class="cta-check">✓</span> Your real photos and Google reviews, built in</li>
+        <li><span class="cta-check">✓</span> Unlimited revisions until you're genuinely happy</li>
+      </ul>
+      <div style="background: #f0fdf4; border-top: 1px solid #bbf7d0; padding: 20px 24px; display: flex; align-items: center; gap: 16px;">
+        <div style="width: 44px; height: 44px; border-radius: 50%; background: #166534; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 1.2rem; font-weight: 700;">✓</div>
+        <div>
+          <div style="font-size: 0.84rem; font-weight: 700; color: #166534; letter-spacing: 0.01em;">100% Satisfaction Guarantee</div>
+          <div style="font-size: 0.78rem; color: #166534; opacity: 0.8; margin-top: 4px; font-weight: 300; line-height: 1.5;">Not happy with the result? You don't pay. No questions asked.</div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ABOUT -->
